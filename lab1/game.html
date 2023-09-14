@@ -8,12 +8,12 @@
     <title>Game</title>
 </head>
 <body>
-    <p>
+    <div class="sidenav">
         <a href="main.html">На главную</a>
-        <br>
         <a href="rules.html">Правила игры</a>
-    </p>
+    </div>
 
+    <div class="main">
     <p>
         <table class="chess">
             <tr>
@@ -24,8 +24,7 @@
                 <th class="numbers">e</th>
                 <th class="numbers">f</th>
                 <th class="numbers">g</th>
-                <th class="numbers">h</th>
-                <th></th>
+                <th  colspan="2" class="numbers">h</th>
             </tr>
             <tr>
                 <td></td>
@@ -117,5 +116,12 @@
             </tr>	
         </table>
     </p>
+
+    <form action="/action_page.php">
+        <label for="fname">Запишите ваш ход:</label><br>
+        <input type="text" id="fname" name="fname" value="а4"><br>
+        <input type="submit">
+      </form>
+</div>
 </body>
 </html>
