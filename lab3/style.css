@@ -1,0 +1,85 @@
+body {
+    background-color: LightGray;
+}
+h1 {
+    color: rgb(0, 0, 105);
+    font-family: verdana;
+    font-size: 250%;
+    text-align: center;
+}
+p {
+    font-family: courier;
+    font-size: 120%;
+  }
+
+/* Side bar */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+/* Main */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+li {
+    font-family: courier;
+    font-size: 120%;
+}
+.main img {
+    width: 500px;
+    height: 500px;
+}
+
+/* Chess board */
+.chess tr:nth-child(odd) td:nth-child(odd) {
+    width: 70px;
+    height: 70px;
+	background: rgb(0, 42, 109);
+}	
+.chess tr:nth-child(even) td:nth-child(even) {
+    width: 70px;
+    height: 70px;
+	background: rgb(0, 42, 109);
+}
+
+.chess td img {
+    width:69px;
+    height:69px;  
+}
+
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: aliceblue;
+  }
+
+.numbers {
+    background-color: rgba(173, 214, 250, 0.64);
+}
+
+/* Footer */
+footer {
+    display: block;
+    text-align: center;
+    font-size: 50%;
+  }
+
