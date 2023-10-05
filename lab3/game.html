@@ -16,7 +16,7 @@
     <div class="main">
     <h1>Игра</h1>
     <p>
-        <table class="chess">
+        <table>
             <tr>
                 <th class="numbers">a</th>
                 <th class="numbers">b</th>
@@ -28,95 +28,103 @@
                 <th  colspan="2" class="numbers">h</th>
             </tr>
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">1</td>
+                <td class="no_checker_here"></td> 
+                <td><p class="black_checker" id="0"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="1"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="2"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="3"></p></td>
+                <th class="numbers">8</td>
             </tr>		
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">2</td>
+                <td><p class="black_checker" id="4"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="5"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="6"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="7"></p></td>
+                <td class="no_checker_here"></td>
+                <th class="numbers">7</td>
             </tr>	
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">3</td>
-            </tr>	
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">4</td>
-            </tr>	
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">5</td>
-            </tr>	
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="8"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="9"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="10"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="black_checker" id="11"></p></td>
                 <th class="numbers">6</td>
             </tr>	
             <tr>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">7</td>
+                <td class="no_checker_here"></td>
+                <th class="numbers">5</td>
             </tr>	
             <tr>
+                <td class="no_checker_here"></td>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
+                <td class="no_checker_here"></td>
                 <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <th class="numbers">8</td>
+                <th class="numbers">4</td>
+            </tr>	
+            <tr>
+                <td><p class="white_checker" id="12"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="13"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="14"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="15"></p></td>
+                <td class="no_checker_here"></td>
+                <th class="numbers">3</td>
+            </tr>	
+            <tr>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="16"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="17"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="18"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="19"></p></td>
+                <th class="numbers">2</td>
+            </tr>	
+            <tr>
+                <td><p class="white_checker" id="20"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="21"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="22"></p></td>
+                <td class="no_checker_here"></td>
+                <td><p class="white_checker" id="23"></p></td>
+                <td class="no_checker_here"></td>
+                <th class="numbers">1</td>
             </tr>	
         </table>
     </p>
+    <!-- Who's turn -->
+    <div class="white_turn_next">
+        Whites turn
+    </div>
+    <p id="devider"></p>
+    <div class="black_turn_next">
+        Blacks turn
+    </div>
 <!-- Кнопки -->
     <form action="game.html">
         <label for="fname">Запишите ваш ход:</label><br>

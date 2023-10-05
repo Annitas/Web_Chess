@@ -1,5 +1,5 @@
 body {
-    background-color: LightGray;
+    background-color: rgba(211, 211, 211, 0.667);
 }
 h1 {
     color: rgb(0, 0, 105);
@@ -8,8 +8,9 @@ h1 {
     text-align: center;
 }
 p {
-    font-family: courier;
-    font-size: 120%;
+    display: inline-block;
+    /* font-family: courier;
+    font-size: 120%; */
   }
 
 /* Side bar */
@@ -49,32 +50,52 @@ li {
 }
 
 /* Chess board */
-.chess tr:nth-child(odd) td:nth-child(odd) {
-    width: 70px;
-    height: 70px;
-	background: rgb(0, 42, 109);
-}	
-.chess tr:nth-child(even) td:nth-child(even) {
-    width: 70px;
-    height: 70px;
-	background: rgb(0, 42, 109);
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
 }
 
-.chess td img {
-    width:69px;
-    height:69px;  
+td {
+    text-align: center;
+    background-color: #0b196ad2;
+    width: 70px;
+    height: 70px;
 }
-
-
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    background-color: aliceblue;
-  }
+.no_checker_here {
+    background-color: #91c8ffa3;
+}
 
 .numbers {
     background-color: rgba(173, 214, 250, 0.64);
 }
+/* Checkers */
+.black_checker {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.white_checker {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: rgb(253, 252, 252);
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
+.king.black_checker {
+    background-color: aqua;
+}
+.king.white_checker {
+    background-color: aquamarine;
+} 
 
 /* Footer */
 footer {
